@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Local models/wheels
+*.whl
+models/*.onnx
+
+# Data
+debug/
+*.jpg
+*.png
+
+# Misc
+.DS_Store
+.vscode/
+.idea/
+Dockerfile
+.dockerignore
