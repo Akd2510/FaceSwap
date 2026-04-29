@@ -11,4 +11,5 @@ services:
       - ./templates:/app/templates
     environment:
       - PYTHONUNBUFFERED=1
+      - UNIFACE_CACHE_DIR=/app/models
     restart: unless-stopped
