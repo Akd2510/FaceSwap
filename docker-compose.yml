@@ -1,0 +1,14 @@
+services:
+  faceswap:
+    image: akshatdikshit/faceswap-app:latest
+    container_name: faceswap-pro
+    ports:
+      - "8000:8000"
+    volumes:
+      # Maps your local models/templates to the container
+      # This ensures the app can access the large .onnx files
+      - ./models:/app/models
+      - ./templates:/app/templates
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
